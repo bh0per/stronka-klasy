@@ -1,0 +1,76 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+button img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.toggle-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#reset-content {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#theme-icon {
+  transition: transform 0.5s ease;
+}
+
+body.dark-mode #theme-icon {
+  transform: rotate(360deg);
+  opacity: 0.8;
+}
+
+body.dark-mode button img:not(#theme-icon) {
+  filter: invert(100%); /* Zmienia kolor na biały tylko dla innych ikon */
+}
+
+/* Nowe treści */
+.new-content {
+  margin-top: 100px; /* Dostosowanie przestrzeni poniżej nagłówka */
+  display: none;
+  height: 100vh;
+}
+#costam {
+  margin-top: 10%; /* Zmienna wartość procentowa w zależności od tego, jak daleko chcesz przesunąć */
+}
