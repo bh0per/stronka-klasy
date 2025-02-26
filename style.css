@@ -74,3 +74,7 @@ body.dark-mode button img:not(#theme-icon) {
 #costam {
   margin-top: 10%; /* Zmienna wartość procentowa w zależności od tego, jak daleko chcesz przesunąć */
 }
+ul{
+  list-style-type: none;
+}
+
