@@ -8,9 +8,9 @@ themeToggleButton.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 
     if (document.body.classList.contains("dark-mode")) {
-        themeIcon.src = "https://cdn-icons-png.flaticon.com/512/10370/10370098.png"; 
+        themeIcon.src = "https://cdn-icons-png.flaticon.com/512/1823/1823397.png"; 
     } else {
-        themeIcon.src = "https://cdn-icons-png.flaticon.com/512/10370/10370228.png"; 
+        themeIcon.src = "https://cdn-icons-png.flaticon.com/512/10484/10484158.png"; 
     }
 });
 
