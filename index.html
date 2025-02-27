@@ -1,111 +1,112 @@
 
-    <!DOCTYPE html>
-    <html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Klasa 2P</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="https://github.com/bh0per/randomshit/blob/main/output-onlinepngtools.png?raw=true">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasa 2P</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://github.com/bh0per/randomshit/blob/main/output-onlinepngtools.png?raw=true">
+    <script src="chatbot.js"></script>
 
-    </head>
-    <body>
-        <header>
-            <button id="theme-toggle">
-                <img id="theme-icon" src="https://cdn-icons-png.flaticon.com/512/10484/10484158.png" alt="XXXXX" />
+</head>
+<body>
+    <header>
+        <button id="theme-toggle">
+            <img id="theme-icon" src="https://cdn-icons-png.flaticon.com/512/10484/10484158.png" alt="XXXXX" />
+        </button>
+    
+
+        <div class="toggle-buttons">
+            <button class="toggle-text">
+                <img src="https://cdn-icons-png.flaticon.com/512/681/681443.png" alt="XXXXX" />
+                </button>
+            <button class="toggle-text">
+                <img src="https://cdn-icons-png.flaticon.com/512/3112/3112852.png" alt="XXXXX" />
             </button>
+            <button class="toggle-text">
+                <img src="https://cdn-icons-png.flaticon.com/512/18960/18960201.png" alt="XXXXX" />
+            </button>
+        </div>
+
+        <button id="reset-content">
+            <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="XXXXX" />
+        </button>
+    </header>
+    <div id="new-content-1" class="new-content" style="display: none;">
+        <!-- Treść do wyświetlenia po kliknięciu przycisku 1 -->
+        <h1>Uczniowie</h1>
+            <ul>
+                <li>
+                    Bartosz Borodziej
+                </li>
+                <li>
+                    Miłosz Grabski
+                </li>
+                <li>
+                    Ihor Hrychyna
+                </li>
+                <li>
+                    Przemysław Iwański
+                </li>
+                <li>
+                    Nastia Klak
+                </li>
+                <li>
+                    Arsen Priadka
+                </li>
+                <li>
+                    Sergiusz Sałasiński 
+                </li>
+                <li>
+                    Mikhail Siruts
+                </li>
+                <li>
+                    Danila Solovyanchick
+                </li>
+                <li>
+                    Damir Sydorchuk
+                </li>
+                <li>
+                    Damian Terro z chin(nie wiem jak się pisze jego nazwisko)
+                </li>
+                <li>
+                    Michał Wojciechowski
+                </li>
+                <li>
+                    Kajetan Wojtyński
+                </li>
+                <li>
+                    Jakub Wolski
+                </li>
+            </ul>
+    </div>
+    <div id="new-content-2" class="new-content" style="display: none;">
+        <!-- Treść do wyświetlenia po kliknięciu przycisku 2 -->
+        <h1>Osiągnięcia uczniów z klasy</h1>
         
-
-            <div class="toggle-buttons">
-                <button class="toggle-text">
-                    <img src="https://cdn-icons-png.flaticon.com/512/681/681443.png" alt="XXXXX" />
-                    </button>
-                <button class="toggle-text">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3112/3112852.png" alt="XXXXX" />
-                </button>
-                <button class="toggle-text">
-                    <img src="https://cdn-icons-png.flaticon.com/512/18960/18960201.png" alt="XXXXX" />
-                </button>
+        <div class="achievement">
+            <img src="https://github.com/bh0per/randomshit/blob/main/479464633_1081341563796521_5833601233885530731_n.jpg?raw=true" alt="Zdjęcie Jakuba Wolskiego">
+            <div class="text">
+                <h2>Jakub Wolski</h2>
+                <h4>🥇 1. miejsce w Warszawie – 100 m</h4>  
+                <h4>🥇 1. miejsce w Warszawie – 200 m</h4>  
+                <h4>🥇 1. miejsce na Mazowszu – sztafeta 4x100 m</h4>  
+                <h4>🥉 3. miejsce w Polsce – sztafeta 4x200 m</h4>  
+                <h4>🏅 5. miejsce na Mazowszu – 100 m</h4>  
+                <h4>🏅 30. miejsce w Polsce – 100 m sprint</h4>  
+                <h4>🏅 72. miejsce w Polsce – 200 m sprint</h4>    
             </div>
-
-            <button id="reset-content">
-                <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="XXXXX" />
-            </button>
-        </header>
-        <div id="new-content-1" class="new-content" style="display: none;">
-            <!-- Treść do wyświetlenia po kliknięciu przycisku 1 -->
-            <h1>Uczniowie</h1>
-                <ul>
-                    <li>
-                        Bartosz Borodziej
-                    </li>
-                    <li>
-                        Miłosz Grabski
-                    </li>
-                    <li>
-                        Ihor Hrychyna
-                    </li>
-                    <li>
-                        Przemysław Iwański
-                    </li>
-                    <li>
-                        Nastia Klak
-                    </li>
-                    <li>
-                        Arsen Priadka
-                    </li>
-                    <li>
-                        Sergiusz Sałasiński 
-                    </li>
-                    <li>
-                        Mikhail Siruts
-                    </li>
-                    <li>
-                        Danila Solovyanchick
-                    </li>
-                    <li>
-                        Damir Sydorchuk
-                    </li>
-                    <li>
-                        Damian Terro z chin(nie wiem jak się pisze jego nazwisko)
-                    </li>
-                    <li>
-                        Michał Wojciechowski
-                    </li>
-                    <li>
-                        Kajetan Wojtyński
-                    </li>
-                    <li>
-                        Jakub Wolski
-                    </li>
-                </ul>
         </div>
-        <div id="new-content-2" class="new-content" style="display: none;">
-            <!-- Treść do wyświetlenia po kliknięciu przycisku 2 -->
-            <h1>Osiągnięcia uczniów z klasy</h1>
-            
-            <div class="achievement">
-                <img src="https://github.com/bh0per/randomshit/blob/main/479464633_1081341563796521_5833601233885530731_n.jpg?raw=true" alt="Zdjęcie Jakuba Wolskiego">
-                <div class="text">
-                    <h2>Jakub Wolski</h2>
-                    <h4>🥇 1. miejsce w Warszawie – 100 m</h4>  
-                    <h4>🥇 1. miejsce w Warszawie – 200 m</h4>  
-                    <h4>🥇 1. miejsce na Mazowszu – sztafeta 4x100 m</h4>  
-                    <h4>🥉 3. miejsce w Polsce – sztafeta 4x200 m</h4>  
-                    <h4>🏅 5. miejsce na Mazowszu – 100 m</h4>  
-                    <h4>🏅 30. miejsce w Polsce – 100 m sprint</h4>  
-                    <h4>🏅 72. miejsce w Polsce – 200 m sprint</h4>    
-                </div>
-            </div>
-        </div>        
-        <div id="new-content-3" class="new-content" style="display: none;">
-            <!-- Treść do wyświetlenia po kliknięciu przycisku 3 -->
-            <!--jesli to czytasz to jestes sigma co cos robisz xD -->
-            <h1>informacje o szkole</h1>
-            <p>strona szkoły itp itd</p>
-        </div>
-        <h1 id="costam"></h1>
+    </div>        
+    <div id="new-content-3" class="new-content" style="display: none;">
+        <!-- Treść do wyświetlenia po kliknięciu przycisku 3 -->
+        <!--jesli to czytasz to jestes sigma co cos robisz xD -->
+        <h1>informacje o szkole</h1>
+        <p>strona szkoły itp itd</p>
+    </div>
+    <h1 id="costam"></h1>
 
-        <script src="script.js"></script>
-    </body>
-    </html>
+    <script src="script.js"></script>
+</body>
+</html>
