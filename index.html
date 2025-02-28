@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -8,14 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://github.com/bh0per/randomshit/blob/main/output-onlinepngtools.png?raw=true">
     <script src="chatbot.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script.js"></script>
-    <style>
-        #map{
-            height: 200px;
-            width:25%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 </head>
 <body>
@@ -23,7 +17,7 @@
         <button id="theme-toggle">
             <img id="theme-icon" src="https://cdn-icons-png.flaticon.com/512/10484/10484158.png" alt="XXXXX" />
         </button>
-    
+
 
         <div class="toggle-buttons">
             <button class="toggle-text">
@@ -43,7 +37,7 @@
     </header>
     <div id="new-content-1" class="new-content" style="display: none;">
         <!-- Treść do wyświetlenia po kliknięciu przycisku 1 -->
-        <h1>Uczniowie:</h1>
+        <h1>Uczniowie</h1>
             <ul>
                 <li>
                     Bartosz Borodziej
@@ -76,7 +70,7 @@
                     Damir Sydorchuk
                 </li>
                 <li>
-                   Damian Terokhin
+                    Damian Terro z chin(nie wiem jak się pisze jego nazwisko)
                 </li>
                 <li>
                     Michał Wojciechowski
@@ -91,8 +85,8 @@
     </div>
     <div id="new-content-2" class="new-content" style="display: none;">
         <!-- Treść do wyświetlenia po kliknięciu przycisku 2 -->
-        <h1>Osiągnięcia uczniów z klasy 2P:</h1>
-        
+        <h1>Osiągnięcia uczniów z klasy</h1>
+
         <div class="achievement">
             <img src="https://github.com/bh0per/randomshit/blob/main/479464633_1081341563796521_5833601233885530731_n.jpg?raw=true" alt="Zdjęcie Jakuba Wolskiego">
             <div class="text">
@@ -108,23 +102,16 @@
         </div>
     </div>        
     <div id="new-content-3" class="new-content" style="display: none;">
+        <div id="map"></div>
+        <script src="script.js"></script>
+
         <!-- Treść do wyświetlenia po kliknięciu przycisku 3 -->
         <!--jesli to czytasz to jestes sigma co cos robisz xD -->
         <h1>informacje o szkole</h1>
-        <p>Nasza szkoła znajduje się na starówce niedaleko kolumny Zygmunta.Na ulicy Podwale 13 w Warszawie.</p>
-        <p>W zdz mamy kierunki takie jak:</p>
-        <ul>
-            <li>Technik informatyk</li>
-            <li>Technik programista</li>
-            <li>Technik realizacji nagłośnień </li>
-            <li>Technik realizacji nagrań</li>
-            <li>Technik usług fryzjerskich</li>
-            <li>Technik żywienia i usług gastronomicznych</li>
-            <li>Liceum Ogólnokształczące psychologiczno-pedagogiczne</li>
-        </ul>
-
+        <p>strona szkoły itp itd</p>
     </div>
     <h1 id="costam"></h1>
 
+    <script src="script.js"></script>
 </body>
 </html>
