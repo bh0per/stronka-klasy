@@ -37,12 +37,3 @@ resetContentButton.addEventListener("click", () => {
 
     document.head.appendChild(script);
 })();
-var map = L.map('map').setView([52.248170, 21.010009], 17); // Zoom 17 - bardzo blisko
-
-L.tileLayer('https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', { 
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-L.marker([52.248170, 21.010009]).addTo(map)
-    .bindPopup('<b>Wybrane miejsce</b><br>52.248170, 21.010009')
-    .openPopup();
