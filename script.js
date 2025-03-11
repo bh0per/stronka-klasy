@@ -25,6 +25,17 @@ resetContentButton.addEventListener("click", () => {
     newContents.forEach(content => content.style.display = "none");
 });
 
+// Obsługa kliknięć na ikony w new-content-3
+const toggleContentButtons = document.querySelectorAll(".toggle-content");
+
+toggleContentButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        newContents.forEach(content => content.style.display = "none");
+        document.getElementById(button.dataset.target).style.display = "block";
+    });
+});
+
+// Chatbot
 (function() {
     window.chtlConfig = { chatbotId: "5548387222" };
 
