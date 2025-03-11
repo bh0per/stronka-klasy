@@ -168,3 +168,11 @@ ul{
 .zawody-btn:hover {
   opacity: 0.8;
 }
+
+#new-content-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Dostosowanie wysokości */
+}
+
