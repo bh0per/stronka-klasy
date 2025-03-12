@@ -48,3 +48,28 @@ toggleContentButtons.forEach(button => {
 
     document.head.appendChild(script);
 })();
+document.addEventListener("DOMContentLoaded", () => {
+    const contentItems = document.querySelectorAll(".content-item");
+
+    contentItems.forEach(item => {
+        item.addEventListener("click", () => {
+            const targetId = `content-${item.innerText.replace(/\s+/g, "-").toLowerCase()}`;
+            let targetDiv = document.getElementById(targetId);
+
+            // Jeśli div jeszcze nie istnieje, twórz go dynamicznie
+            if (!targetDiv) {
+                targetDiv = document.createElement("div");
+                targetDiv.id = targetId;
+                targetDiv.classList.add("new-content");
+                targetDiv.innerHTML = `<h1>${item.innerText}</h1><p>Tu będzie treść dotycząca: ${item.innerText}</p>`;
+                document.body.appendChild(targetDiv);
+            }
+
+            // Ukrywamy wszystkie inne divy
+            document.querySelectorAll(".new-content").forEach(div => div.style.display = "none");
+
+            // Pokazujemy nowy div
+            targetDiv.style.display = "block";
+        });
+    });
+});
