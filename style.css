@@ -175,4 +175,15 @@ ul{
   align-items: center;
   height: 100vh; /* Dostosowanie wysokości */
 }
-
+.dynamic-content {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
